@@ -50,9 +50,7 @@ public class MyFirstTest3 {
                     goToCurrentPage();
                     continue;
                 }
-                driver.findElement(By.id("txaBody")).sendKeys("Hi, I am from England and have just started learning Spanish. If you would like to practice English or French, add me on Facebook or Instagram:\n" +
-                        "https://www.facebook.com/ayman.harake/\n" +
-                        "https://www.instagram.com/aymanelharake/\n");
+                driver.findElement(By.id("txaBody")).sendKeys("meesage goes here");
                 driver.findElement(By.id("btnSend")).click();
                 MESSAGES_SENT++;
                 driver.findElement(By.linkText("Back to Search Results")).click();
@@ -92,8 +90,8 @@ public class MyFirstTest3 {
 
     public void doLogin(){
         driver.navigate().to("https://www.mylanguageexchange.com/login.asp?showmenu=1");
-        driver.findElement(By.id("txtEmail")).sendKeys("aymanharake@gmail.com");
-        driver.findElement(By.id("txtPassw")).sendKeys("pascrt12");
+        driver.findElement(By.id("txtEmail")).sendKeys("*********");
+        driver.findElement(By.id("txtPassw")).sendKeys("**********");
         driver.findElement(By.id("submit1")).click();
     }
 
